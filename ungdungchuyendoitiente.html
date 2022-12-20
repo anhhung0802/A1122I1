@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển Đổi Tiền Tệ</title>
+</head>
+
+<body>
+    <form>
+        <th>Amount</th>
+        <input type="text" name="Amount" id="number" >   
+        <th> From Currency </th>
+        <select id="option 1">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+        </select>
+        <th> To Currency </th>
+        <select id="option 2">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+        </select>
+        <input type="button" onclick="change()" value="convert"> 
+
+    </form>
+    <p id="Result" style="color: blue;"></p>
+    <script>
+        function change(){
+            let option1= document.getElementById("option 1").value; 
+            let option2= document.getElementById("option 2").value;
+            let Amount = document.getElementById("number").value;
+            let Result;
+        
+    if (option1==option2) {
+      Result=Amount     
+    }
+    else if(option1=="VND" && option2=="USD")
+	{
+    Result=Amount*0.000042 + "$"
+}       
+ 
+    else{
+    Result=Amount*23548 + "VND"
+}
+       document.getElementById("Result").innerText="Result:"+Result
+}
+    </script>
+</body>
+</html>
