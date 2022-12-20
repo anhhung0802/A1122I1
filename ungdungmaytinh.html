@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng Dụng Máy Tính</title>
+</head>
+<body>
+    <h2>Caculator</h2>
+<form>
+    <table>
+        <tr>
+        <td><input type="text"name="number" id="A"></td>
+        <td><input type="text"name="number" id="B"></td>
+        </tr>
+        <tr>
+        <td><input type="button" onclick="Addition()"value="Addition(+)"></td>
+        <td><input type="button" onclick="Subtraction()"value="Subtraction(-)"></td>
+        <td><input type="button" onclick="Multuplication()"value="Multuplication(X)"></td>
+        <td><input type="button" onclick="Division()"value="Division(/)"></td>
+        </tr>
+    </table>
+</form>
+<p id="result" style="color: blue;"></p>
+    <script>
+    function Addition(){
+        let a = document.getElementById("A").value;
+        let b = document.getElementById("B").value;
+        let result=parseInt(a)+parseInt(b);
+
+        document.getElementById("result").innerText="Result:"+result ;
+
+    }
+    function Subtraction(){
+        let a = document.getElementById("A").value;
+        let b = document.getElementById("B").value;
+        let result=parseInt(a)-parseInt(b);
+        document.getElementById("result").innerText="Result:"+result;
+    }
+    function Multuplication(){
+        let a =document.getElementById("A").value;
+        let b =document.getElementById("B").value;
+        let result=parseInt(a)*parseInt(b);
+        document.getElementById("result").innerText="Result:"+result;
+    }
+    function Division(){
+        let a =document.getElementById("A").value;
+        let b =document.getElementById("B").value;
+        let  result =parseInt(a)/parseInt(b);
+        document.getElementById("result").innerText="Result:"+result;
+    }
+</script>
+</body>
+</html>
