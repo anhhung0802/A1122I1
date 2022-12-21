@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Chỉ Số Cân Nặng Cơ Thể</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Weight <input type="text" name="number"  id="Height"></td>               
+                <td>Height <input type="text" name="number"  id="Weight"> </td> 
+                <td><input type="button" onclick="change()" value="Result"></td>    
+            </tr>
+        </table>
+        
+    </form>
+  <script>
+    function change(){
+        let b=document.getElementById("Height").value;
+        let a=document.getElementById("Weight").value;
+        let BMI;
+        BMI = a / ( b ^ 2 )
+        if (BMI < 18){
+            document.write("Underweight");
+        }
+        else if (BMI < 25.0){
+            document.write("Normal");
+
+        }
+        else if (BMI < 30.0){
+            document.write("Overweight");
+
+        }
+        else{
+            document.write("Obese");
+
+        }
+
+    }
+  </script>
+</body>
+</html>
