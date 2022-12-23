@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b</title>
+</head>
+<body>
+<input type="button" name="number" value="Nhập 2 Cạnh Kề" onclick="check()">    
+<script>
+    function check(){
+        let a = +prompt("Độ dài cạnh góc vuông thứ 1:");
+        let b = +prompt("Độ dài cạnh góc vuông thứ 2:");
+        let result = 0.5*a*b;
+        alert("Diện tích của hình tam giác vuông là: "+result)
+    }
+</script>
+</body>
+</html>
