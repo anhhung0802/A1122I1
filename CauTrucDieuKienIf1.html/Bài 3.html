@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó</title>
+</head>
+<body>
+    <input type="button" name="a" value="Nhập 3 Số Bất Kỳ" onclick="check()">
+<p id="result" style="color: blue"></p>
+<script>
+    function check() {
+        let a = +prompt("Nhập số phần tử đầu tiên 1") ;
+        let b = +prompt("Nhập Số Phần tử số  thứ 2");
+        let c = +prompt("Nhập Số Phần tử số  thứ 3")
+        let max = a;
+        let result="a";
+        if (max < b){
+            max=b;
+            result ="b"
+        } else if (max < c) {
+            max=c;
+            result ="c"
+
+        }
+        document.getElementById("result").innerText="Số Lớn Nhất Trong 3 Số Là:"+result+"="+max ;
+    }
+</script>
+    
+</body>
+</html>
