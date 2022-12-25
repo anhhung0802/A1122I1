@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bậc 2</title>
+</head>
+<body>
+    <input type="button" name="number" value="NHẬM NGHIỆM PHƯƠNG TRÌNH BẬC 2" onclick="check()">
+<p id="a1" style="color: blue"></p>
+<p id="a2" style="color: blue"></p>
+<script>
+    function check() {
+        let a = +prompt("Nhập Nghiệm A");
+        let b = +prompt("Nhập Nghiệm B");
+        let c = +prompt("Nhập Nghiệm C");
+        let bthuc = b*b -4*a*c;
+        let result;
+        let a1;
+        let a2;
+        if (bthuc<0){
+            result=("Phương trình vô nghiệm");
+            document.getElementById("result").innerText = result;
+        }else if (bthuc == 0){
+            result=("Nghiệm của phương trình là: "+ ((-b)/2*a))
+            document.getElementById("result").innerText = result;
+        } else {
+            a1=((-b + Math.sqrt(bthuc))/2*a)
+            a2=((-b - Math.sqrt(bthuc))/2*a)
+            document.getElementById("a1").innerText = "a1 = "+a1;
+            document.getElementById("a2").innerText = "a2 = "+a2;
+
+        }
+    }
+</script>
+</body>
+</html>

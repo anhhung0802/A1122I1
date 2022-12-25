@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chương trình tính lãi ngân hàng</title>
+</head>
+<body>
+    <p> Có Thể Bạn Đã Biết! Lãi Kép Là Kì Quan Thứ 3 Của Thế Giới!!!</p>
+    <input type="button" name="number" value="Tính Lãi Thôi Nào" onclick="run()">
+    <p id="result" style="color: blue"></p>
+<script>
+    function run() {
+        let a = +prompt("Nhập Số Tiền Bạn Gửi");
+        let b = +prompt("Lãi Suất Ngân Hàng(%năm)");
+        let c = +prompt("Số Tháng Bạn Vay");
+        let result;
+        if ((a < 0)||(b<0)||(c<0)){
+            result="Nhập Lộn Rồi Kìa. Tiến bạn gửi phải lớn hơn 0 Nhá !!! "
+        } else {
+            result="Số Tiền Lãi hàng tháng của bạn là: "+a*(b/100)/12 *c+" vnd"
+        }
+        document.getElementById("result").innerText = result;
+            }
+</script>
+</body>
+</html>

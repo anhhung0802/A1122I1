@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuế Thu Nhập Cá Nhân</title>
+</head>
+<body>
+    <input type="button" name="number" value="TÍnh Tiền Thuế " onclick="run()">
+<p id="result" style="color: blue"></p>
+<script>
+    function run() {
+        let a = +prompt("Lương của bạn là: ");
+        let result;
+        if (a < 0) {
+            result = "Bạn Nợ Tiền Nhiều Tới Mức Âm Tiền Lương Lun À ??? Cố Gắng Đừng Nợ Nữa Nhá";
+        } else {
+            if (a < 5000000) {
+                result = (a * 0.05);
+            } else if (a < 10000000) {
+                result = ((a * 0.10) - 250000);
+            } else if (a < 18000000) {
+                result = ((a * 0.15) - 750000);
+            } else if (a < 32000000) {
+                result = ((a * 0.25) - 1650000);
+            } else if (a < 52000000) {
+                result = ((a * 0.25) - 3250000);
+            } else if (a < 80000000) {
+                result = ((a * 0.30) - 5850000);
+            } else {
+                result = ((a * 0.35) - 9850000);
+            }
+        }
+        document.getElementById("result").innerText ="Tiền Lương Của Bạn Là: "+a +" Tiền Nộp Thuế Cho Nhà Nước Là: "+result+" VND";
+    }
+</script>
+
+</body>
+</html>

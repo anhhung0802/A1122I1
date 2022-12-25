@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm Tra Tuổi </title>
+</head>
+<body>
+    <input type="button" name="tuoi" value="Nhập Tuỏi " onclick="run()">
+<p id="result" style="color: blue"></p>
+<script>
+    function run() {
+        let a = +prompt("Nhập Số Tuổi") ;
+        let result;
+        if (a>0&&a<=120) {
+            result="Đây là số tuổi của một người"
+        } else {
+            result="Yesur, chắc chắn là như vậy rồi . Vãi cả Chửng Thiệt Á Chứ . Chúc bạn Sống Thọ Nghìn Năm . I nhớp Diu"
+        }
+        document.getElementById("result").innerText=result ;
+    }
+</script>
+</body>
+</html>

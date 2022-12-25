@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm Tra Cạnh Của Một Tam Giác</title>
+</head>
+<body>
+    <input type="button" name="number" value="Nhập Vào Số Cạnh Của Tam GIác" onclick="run()">
+<p id="result" style="color: blue"></p>
+<script>
+    function run() {
+        let a = +prompt("Nhập Vào Số A");
+        let b = +prompt("Nhập Vào Số B");
+        let c = +prompt("Nhập Vào Số C");
+        let result;
+        if ((a > 0)&&(b>0)&&(c>0)&& (a + b > c)&&(b + c > a)&&(a + c > b)) {
+            result="Là Cạnh Của 1 Tam Giác";
+        } else {
+            result="Không Phải Cạnh Của Một Tam Giác";
+        }
+        document.getElementById("result").innerText = result;
+    }
+</script>
+</body>
+</html>

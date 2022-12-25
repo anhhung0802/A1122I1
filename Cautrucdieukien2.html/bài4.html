@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diện Tích Hình Chữ Nhật</title>
+</head>
+<form>
+    <input type="button" name="number" value="NHẬP SỐ CẠNH CỦA HÌNH CHỮ NHẬT" onclick="check()">
+</form>
+<body>
+    <script>
+        function check(){
+        let a = +prompt("Chiều dài hình chữ nhật: ");
+        let b = +prompt("Chiều rộng hình chữ nhật: ");
+        let s = a*b;
+        alert("Diện tích hình hình chữ nhật "+s)
+        }
+    </script>
+</body>
+</html>

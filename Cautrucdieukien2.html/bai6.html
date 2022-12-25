@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương Trình Bậc 1</title>
+</head>
+<body>
+    <input type="button" name="number " value="TÍNH PHƯƠNG TRÌNH BẬC 1" onclick="check()">
+    <p id="result" style="color: blueviolet;"></p>
+    <script>
+        function check() {
+        let a = +prompt("Nhập Số A:");
+        let b = +prompt("Nhập Số B:");
+        let result = (-b) / a
+        if (a <= 0) {
+            result ="Phương Trình Vô Nghiệm, Điều Kiện A Khác Hoặc Lớn Hơn 0";
+            document.getElementById("result").innerText= result;
+        }
+        else{
+            document.getElementById("result").innerText= result;
+        }
+    }
+    </script>
+</body>
+</html>
