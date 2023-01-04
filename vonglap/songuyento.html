@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị các số nguyên tố đầu tiên</title>
+</head>
+<body>
+<input type="button" value="Nhập Khoảng Số Mà Các Bạn Muốn Kiểm Tra Vào Đây Nhá" onclick="check()">
+<script>
+    function check(){
+        let a= +prompt("Nhập Khoảng Số Mà Bạn Muốn Kiểm Tra Nó Là Nguyên Tố")
+        let count=0;
+        let i=2;
+        let n=2;// Kiểm Tra
+    
+      if(a<=1){
+        alert("Bạn Phải Nhập Số Lớn Hơn 2.Vui lòng kiểm tra lại")
+    }
+    for (n; n <= a; n++){
+        count =0;
+        for(i; i <= n/2; i++){
+            if ( i % n == 0){
+                count++;
+            }
+        }
+        if (count == 0){
+            document.writeln(i)
+        }
+        
+    }
+
+    
+   
+
+        
+        
+
+    }
+</script>
+
+</body>
+</html>

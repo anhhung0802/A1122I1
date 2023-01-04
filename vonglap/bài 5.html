@@ -1,0 +1,25 @@
+!\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính tổng của 20 số đầu tiên trong dãy fibonacci.</title>
+</head>
+<body>
+    <script>
+        let f0=0;
+        let f1=1;
+        let f2=1;
+        let i;
+        let ftong;
+        for(i=0 ; i<20 ; i++){
+            f0=f1;
+            f1=f2;
+            f2=f0+f1;
+            ftong= ftong+f2
+            document.writeln(ftong)
+        }
+    </script>
+</body>
+</html>
