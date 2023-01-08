@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính giai thừa của một số nguyên dương</title>
+</head>
+<body>
+    <script>
+        let n=+prompt("Nhập số gia thừa bạn muốn tính:");
+        let i=1;
+        let gthua=1;
+        if(n<=0){
+            alert("Vui Lòng Nhập Số Dương Nhá Bạn")
+        }else if(n==0 && n==1)
+            alert("Giai thừa bằng 1")
+        for(i; i<=n; i++  ){
+            gthua=gthua*i
+            alert(gthua);
+        }
+
+    </script>
+</body>
+</html>

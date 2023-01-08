@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.</title>
+</head>
+<p id="result" style="color: blue"></p>
+<body>
+    <script>
+         let a = +prompt("Nhập Số Tiền Bạn Gửi");
+        let b = +prompt("Lãi Suất Ngân Hàng(%năm)");
+        let c = +prompt("Số Tháng Bạn Vay");
+        let result;
+        if ((a < 0)||(b<0)||(c<0)){
+            result="Nhập Lộn Rồi Kìa. Tiến bạn gửi phải lớn hơn 0 Nhá !!! "
+        } else {
+            result="Số Tiền Lãi  của bạn trong  là: "+ a*(1+b/12)*(c*5)-a + " vnd";
+        }
+        document.getElementById("result").innerText = result;
+    
+    </script>
+</body>
+</html>
