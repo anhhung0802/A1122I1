@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng.</title>
+</head>
+<body>
+    <script>
+    let n = +prompt("nhap so phan tu cua mang");
+    let max = 0;
+    let arr = [''];
+    let tong = 0;
+    let tbc=0;
+    let i;
+    for (i = 1; i <= n; i++) {
+        arr[i - 1] = +prompt("Nhập vào phần tử " + i);
+    }
+    for (i = 0; i <= arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+            tong=tong+arr[i];
+            tbc=tong/n;
+        }
+    }
+    document.writeln("Số lớn nhất của mảng là: " + max + " Trung Bình Cộng Của Mảng Là: " + tbc);
+    </script>
+</body>
+</html>
