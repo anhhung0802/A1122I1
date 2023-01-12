@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài6 Mảng 2</title>
+</head>
+<body>
+    <script>
+          let n = +prompt("Nhập số lương phần tử mảng");
+        let arr = [];
+        for (let i = 0 ; i < n ; i++ ){
+            arr[i] = +prompt("Nhập giá trị thứ: " +(i+1));
+            for( j=0 ; j <arr.length ; j++ ) {
+                if(arr[j] = "-"){
+                    arr.splice(j , 1 , "_");
+                }
+            }
+        }
+            document.write("Chuỗi đã sửa " + arr);
+    </script>
+</body>
+</html>
