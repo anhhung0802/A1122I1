@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7</title>
+</head>
+<body>
+    <script>
+          let a1 = +prompt("Nhập số nguyên thứ nhất: ");
+          let a2 = +prompt("Nhập số nguyên thứ hai:  ");
+  function changeBook(a1, a2){// Book Đây có nghĩa là chỗ và đây sử dụng thuật toán đổi chỗ trung gian //
+    let newbook = a1;
+        a1 = a2;
+        a2 = newbook;
+    alert("Thứ tự sau khi được thay đổi là :"+a1+"và"+a2);
+  } changeBook(a1,a2);
+    </script>
+</body>
+</html>

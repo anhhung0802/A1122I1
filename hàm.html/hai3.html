@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3 của Hàm 1</title>
+</head>
+<body>
+    <script>
+    let n1 = +rompt("Nhập số đầu tiên mà bạn muốn : ");
+    let n2 = +prompt("Nhập số thứ hai mà bạn muốn  : ");
+    function check() {
+        if (n1 > n2){
+            alert("Số đầu tiên lớn hơn số thứ hai: "+ n1 + ">" + n2);
+        }else if (n1 < n2){
+            let s1=n1+n2;
+            alert("Số đầu tiên nhỏ hơn số thứ hai và ta có Tổng của hai số vừa nhập là: " +s1);
+        }else{
+            let s2=n1+n2;
+            alert("Số thứ đầu tiên bằng số thứ hai và tổng của hai số vừa nhập là:      " +s2);
+        }
+    }
+    check();
+    </script>
+</body>
+</html>
