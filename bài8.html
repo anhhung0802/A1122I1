@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài8</title>
+</head>
+<body>
+    <script>
+    function reverseArray(array){
+      array.reverse();// Đảo
+    }
+    let n = +prompt("Nhập số lượng phần tử của mảng")
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+      arr[i] = +prompt("Nhập giá trị của số nguyên thứ " + (i+1))
+    }
+    reverseArray(arr);
+    alert("Mảng sau khi đảo ngược là: "+arr.join(" "));
+    </script>
+</body>
+</html>
