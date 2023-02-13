@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tính Thuế Thu Nhập</title>
+</head>
+<body>
+<script>
+    let nv=+prompt("Nhập vào lương mà bạn muốn:đơn vị là VNĐ");
+    let lrong;// khai báo lương ròng của nhân viên nhận được
+    if (nv>15000000){//15 triệu trở lên tính 20%
+        lrong=nv*20/100;
+    }if(nv<=15000000 && nv>=7000000){//7 triệu đến 15tr tính thuế thu nhập 10%
+        lrong=nv*10/100;
+    }if(nv<7000000){
+       lrong=nv*5/100;
+    }alert("Đây là lương thực sự mà nhân đó nhận được:"+lrong);
+
+</script>
+</body>
+</html>
