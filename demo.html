@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tính tiết kiệm nhiên liệu</title>
+</head>
+
+<body>
+    <h1> 1. Calculating Fuel Economy</h1>
+    <h1> 2. Calculating Distance Traveled</h1>
+    <h1> 3. Revised Fuel Economy</h1>
+    <h1> 0. Revised Fuel Economy</h1>
+    <button type="button" onclick="Choose()">Click Me!</button>
+    <script>
+        function Choose() {
+            let personChoice = +prompt("Hãy Chọn Mục Mà Bạn Muốn Kiểm Tra")
+            switch (personChoice) {
+                case 1://MPG là mpg viết tắt từ Miles per gallon, có nghĩa là đơn vị đo lượng nhiên liệu tiêu thụ (số dặm chạy được trên một gallon).
+                    let t = prompt("Hãy Nhập Thời Gian Đơn Vị Là Phút Mà Xe Bạn Đã Đi:");
+                    let v = prompt("Bạn Hãy Nhập Vận Tốc Trung Bình Của Xe Oto:");
+                    let f = prompt("Nhập vào số xăng bạn đã tiêu thụ :");// đã sử dụng bao nhiêu gallon xăng để di chuyển trong quảng đường đó
+                    let tb = (v * t / 60) / f;// công thức tính tb dặm/gallon 
+                    alert("Mức tiêu thụ nhiên liệu của bạn là dặm/gallon là : " + tb);
+                    break;
+                case 2://Tính quãng đường đã đi
+                    let r = prompt("Bạn Hãy Nhập Bán Kính Của Bánh Xe");
+                    let n = +prompt("Bạn Hãy Nhập Số Vòng Quay Của Bánh Xe");
+                    let s = 2 * 3.14 * r * n * 0.0000157828// quãng đường đi được khi có bán kính và số vòng
+                    alert("Quãng đường mà bạn đã đi là :" + s);
+                    break;
+                case 3://Tính toán tiết kiệm nhiên liệu sửa đổi
+                    r = prompt("Bạn Hãy Nhập Bán Kính Của Bánh Xe");
+                    n = +prompt("Bạn Hãy Nhập Số Vòng Quay Của Bánh Xe");
+                    f = prompt("Nhập vào số xăng bạn đã tiêu thụ :");
+                    let result = 2.0 * 3.14 * r * n * 0.0000157828 / f;
+                    alert("Xe của bạn chạy trung bình" + result + "dặm/gallon");
+                    break;
+                case 0:
+                    alert("Đúng nhận Sai Cãi");
+                    break;
+            }
+
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
