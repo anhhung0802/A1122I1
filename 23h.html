@@ -31,11 +31,11 @@
                     let s = 2 * 3.14 * r * n * 0.0000157828// quãng đường đi được khi có bán kính và số vòng
                     alert("Quãng đường mà bạn đã đi là :" + s);
                     break;
-                case 3://Tính toán tiết kiệm nhiên liệu sửa đổi
-                    r = prompt("Bạn Hãy Nhập Bán Kính Của Bánh Xe");
-                    n = +prompt("Bạn Hãy Nhập Số Vòng Quay Của Bánh Xe");
-                    f = prompt("Nhập vào số xăng bạn đã tiêu thụ :");
-                    let result = 2 * 3.14 * r * n * 0.0000157828 / f
+                case 3://Tính toán tiết kiệm nhiên liệu sửa đổi** a là bán kính , b là số vòng , c là xăng tiêu thụ
+                    let a = prompt("Bạn Hãy Nhập Bán Kính Của Bánh Xe");
+                    let b = +prompt("Bạn Hãy Nhập Số Vòng Quay Của Bánh Xe");
+                    let c = prompt("Nhập vào số xăng bạn đã tiêu thụ :");
+                    let result = 2 * 3.14 * a * b * 0.0000157828 / c
                     alert("Xe của bạn chạy trung bình" + result + "dặm/gallon");
                     break;
                 case 0:
