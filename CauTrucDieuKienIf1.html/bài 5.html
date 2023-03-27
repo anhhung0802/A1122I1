@@ -7,6 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script> 
+        let markOne = prompt("Hãy nhập điểm môn đầu tiên của bạn : ");
+        let markTwo = prompt("Hãy nhập điểm môn thứ hai của bạn :  ");
+        let markThree = prompt("Hãy nhập điểm môn thứ ba của bạn : ");
+        let sum = (markOne + markTwo + markThree ) / 3 ; 
+        if ( sum >= 8 ){
+            alert("Chúc mừng bạn dã được học sinh giỏi");
+        }else if (sum <=8 && sum >= 6 ){
+        alert("Chúc mừng bạn được học sinh khá");
+        }else{
+        alert("Chúc mừng bạn được học sinh trung bình");
+        }
+    </script>
 </body>
 </html>
