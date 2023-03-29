@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Game Đoán Số </title>
+<button onclick="play()">play</button>
+<script>
+    function play(){
+        let n = prompt("nhap so ban doan");
+        let ranDom =Math.round(n*Math.random()) ;
+
+            if (n == ranDom) {
+                alert("Xin Chúc Mừng Bạn Đã Thắng");
+            } else {
+               alert("Chúc bạn may mắn lần sau . Hãy Chơi lại nhé");
+                                   }
+
+           }
+ </script>
